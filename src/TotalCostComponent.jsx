@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function TotalCostComponent({ total }) {
+  //Total
   return (
     <div className="summary">
       <div className="summary-total-items">
@@ -17,5 +18,6 @@ export default function TotalCostComponent({ total }) {
         <button className="checkout-cta">Go to Secure Checkout</button>
       </div>
     </div>
+    //Total
   );
 }

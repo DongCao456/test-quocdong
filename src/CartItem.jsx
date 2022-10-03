@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 export default function CartItem({ course, selectCourse, index }) {
+  //CartItem
   const [selection, setSelection] = useState(0);
 
   const handleSelect = (event) => {
@@ -57,4 +58,5 @@ export default function CartItem({ course, selectCourse, index }) {
       </div>
     </div>
   );
+  //CartItem
 }
