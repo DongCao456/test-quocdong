@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 
-export default function CartItem({ course }) {
+export default function CartItem({ course, selectCourse, index }) {
   const [selection, setSelection] = useState(0);
 
   const handleSelect = (event) => {
     setSelection(event.target.value);
   };
 
-  let a = course.opt[selection].price - course.opt[selection].priceDiscount;
-  console.log(a);
   const [price1, setPrice] = useState(0);
   return (
     <div class="basket-product">
+      <div class="item">
+        <input
+          type="checkbox"
+          value={index}
+          name={selection}
+          onChange={(event) => selectCourse(event, event.target.name)}
+        ></input>
+      </div>
       <div class="item">
         <div class="product-image">
           <img
