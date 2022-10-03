@@ -7,6 +7,7 @@ import TotalCostComponent from "./TotalCostComponent";
 import CartItem from "./CartItem";
 
 function App() {
+  //App
   const [items, setItems] = useState([...data]);
   const [infoCourse, setinfoCourse] = useState(null);
   const getInfoCourse = (event) => {
@@ -71,6 +72,7 @@ function App() {
         <TotalCostComponent total={total}></TotalCostComponent>
       </aside>
     </div>
+    //App
   );
 }
 
